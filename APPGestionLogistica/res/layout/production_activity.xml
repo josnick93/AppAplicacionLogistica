@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.oscasistemas.appgestionlogistica.Menu.MenuActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sendTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/order_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/textTitle"
+            android:textIsSelectable="false"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00" >
+
+            <Button
+                android:id="@+id/boton_generadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:gravity="center_horizontal"
+                android:text="Generadas"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/boton_terminadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:gravity="center_horizontal"
+                android:text="Terminadas"
+                android:textSize="15dp" />
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/searchCodeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/barcode_search" />
+
+        <EditText
+            android:id="@+id/busquedaTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/textFieldBackground"
+            android:ems="9"
+            android:hint="@string/text_search"
+            android:singleLine="true"
+            android:textColor="@color/textFieldText" >
+        </EditText>
+
+        <ListView
+            android:id="@+id/Orders"
+            android:layout_width="fill_parent"
+            android:layout_height="299dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="47"
+            android:minHeight="?android:attr/listPreferredItemHeight" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00" >
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_icon" />
+
+            <ImageButton
+                android:id="@+id/homeBtn"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="140dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

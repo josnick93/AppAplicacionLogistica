@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.oscasistemas.appgestionlogistica.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/ArticleCode"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textTitle"
+                android:textIsSelectable="false"
+                android:textSize="32dp" />
+
+            <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+                android:id="@+id/ClientText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textTitle"
+                android:textIsSelectable="false"
+                android:textSize="32dp" />
+        </LinearLayout>
+
+        <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+            android:id="@+id/ArticleAlias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ArticleCode"
+            android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/textTitle"
+            android:textIsSelectable="false"
+            android:textSize="24dp" />
+
+        <ListView
+            android:id="@+id/infoArticleList"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="0.04"
+            android:background="@drawable/listview_border" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/EditText02"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.51"
+                android:background="@color/textFieldBackground"
+                android:ems="10"
+                android:inputType="none"
+                android:paddingBottom="5dp"
+                android:text="	Producir"
+                android:textColor="@color/textFieldText" />
+
+            <EditText
+                android:id="@+id/avaiableArticles"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.83"
+                android:background="@color/textFieldBackground"
+                android:ems="10"
+                android:gravity="right"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/textFieldText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00" >
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_icon" />
+
+            <Button
+                android:id="@+id/dispButton"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:text="Disponibilidad" />
+
+            <ImageButton
+                android:id="@+id/homeBtn"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

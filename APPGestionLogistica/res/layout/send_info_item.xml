@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/transparent" >
+
+    <!-- title -->
+
+
+    <!-- counter -->
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:textColor="#C0C0C0" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/numeroPedido"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/textTitle"
+            android:textIsSelectable="false"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/cliente_proveedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/textTitle"
+            android:textIsSelectable="false"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+        android:id="@+id/sendDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:gravity="right"
+        android:textColor="#F3F3F3"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/orderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/recvDate"
+        android:text="Referencia "
+        android:textColor="@color/subTitle"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/orderText"
+        android:text="Envio: "
+        android:textColor="@color/subTitle"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/recepcionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:text="Recepcion: "
+        android:textColor="@color/subTitle"
+        android:textSize="20dp" />
+
+    <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+        android:id="@+id/ReceptionDateText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendDate"
+        android:gravity="right"
+        android:textColor="#F3F3F3"
+        android:textSize="20dp" />
+
+    <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+        android:id="@+id/referencia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendDate"
+        android:layout_toRightOf="@+id/recepcionText"
+        android:gravity="right"
+        android:textColor="#F3F3F3"
+        android:textSize="20dp" />
+
+</RelativeLayout>

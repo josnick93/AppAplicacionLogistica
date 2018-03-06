@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.oscasistemas.appgestionlogistica.Menu.MenuActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/sendTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="Localización Articulos"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/textTitle"
+            android:textIsSelectable="false"
+            android:textSize="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/WarehouseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Almacén"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textTitle"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/WarehouseSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dialog"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/UbicacionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicación"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textTitle"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/UbicationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dialog"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Localización"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textTitle"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/LocationSpinner"
+                android:layout_width="99dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.72"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dialog"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/Articles"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.41"
+            android:minHeight="?android:attr/listPreferredItemHeight" />
+
+        <EditText
+            android:id="@+id/movementText"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/textFieldBackground"
+            android:editable="false"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:text="MOVER ARTICULO"
+            android:textColor="@color/textFieldText" />
+
+        <LinearLayout
+            android:id="@+id/movement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/originEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/textFieldBackground"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Origen" />
+
+            <EditText
+                android:id="@+id/destinyEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@color/textFieldBackground"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Destino" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00" >
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_icon" />
+
+            <ImageButton
+                android:id="@+id/homeBtn"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="140dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

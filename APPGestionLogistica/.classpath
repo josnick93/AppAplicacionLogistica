@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="libs/mysql-connector-java-3.0.17-ga-bin.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/Zxing Lib Android"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK/Zxing Lib Android"/>
+	<classpathentry exported="true" kind="lib" path="/Zxing Lib Android/libs/core.jar"/>
+	<classpathentry kind="lib" path="libs/core-3.2.1.jar"/>
+	<classpathentry kind="lib" path="libs/fontbox-2.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/itext7-kernel-7.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/itext7-pdftest-7.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/itextpdf-5.3.5.jar"/>
+	<classpathentry kind="lib" path="libs/org-apache-commons-logging.jar"/>
+	<classpathentry kind="lib" path="libs/pdfbox-2.0.4.jar"/>
+	<classpathentry kind="lib" path="libs/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="libs/microlog4android-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/MapeoBaseDeDatos.jar"/>
+	<classpathentry kind="lib" path="libs/json-view-0.16.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

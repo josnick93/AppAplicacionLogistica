@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.oscasistemas.appgestionlogistica.Menu.MenuActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+    
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:text="Envios"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/textTitle"
+            android:textSize="32sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/pendSendOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Pendientes"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/sendSendOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Albaranes salida"
+            android:textSize="28sp" />
+        
+        <Button
+            android:id="@+id/ExpeditionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Expediciones"
+            android:textSize="28sp" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_marginTop="120dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_icon" />
+
+    </LinearLayout>
+
+</RelativeLayout>

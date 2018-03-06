@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="@color/background" >
+
+    <TextView
+        android:id="@+id/ExpedicionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Expedición: "
+        android:textColor="@color/background_material_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ClienteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ExpedicionText"
+        android:text="Cliente: "
+        android:textColor="@color/background_material_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ReferenciaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ClienteText"
+        android:text="Ref: "
+        android:textColor="@color/background_material_light"
+        android:textSize="24sp" />
+
+    <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+        android:id="@+id/ExpedicionInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ClienteInforText"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/UsuarioText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ReferenciaText"
+        android:text="Vendedor: "
+        android:textColor="@color/background_material_light"
+        android:textSize="24sp" />
+
+    <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+        android:id="@+id/UsuarioInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/UsuarioText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ReferenciaInfoText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp" />
+
+    <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+        android:id="@+id/ClienteInforText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ClienteText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ExpedicionText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp" />
+
+    <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+        android:id="@+id/ReferenciaInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/UsuarioText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ClienteInforText"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp" />
+
+</RelativeLayout>

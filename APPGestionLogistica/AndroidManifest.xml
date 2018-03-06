@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oscasistemas.appgestionlogistica"
+    android:versionCode="9"
+    android:versionName="1.9" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/osca_icon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.informacionArticulo.ActividadInformacionArticulo"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.BusquedaArticulos.ActividadBusquedaArticulos"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.LocalizacionArticulos.ActividadLocalizacionArticulos"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.Menu.MenuActivity"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.BusquedaOrdenesProduccion.ActividadBusquedaOrdenesProduccion"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.BusquedaEnviosPendientes.ActividadEnviosPendientes"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.MenuEnvios.ActividadMenuEnvios"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+         <activity
+            android:name="com.oscasistemas.appgestionlogistica.BusquedaAlbaranesSalida.ActividadAlbaranesSalida"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+          <activity
+            android:name="com.oscasistemas.appgestionlogistica.InformacionEnviosPendientes.ActividadInformacionEnvioPendiente"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.Recepciones.ReceivedActivity"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="andcom.oscasistemas.appgestionlogistica.SendOrders.SendActivity"
+            android:screenOrientation="portrait"
+           >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.InformacionOrdenProduccion.ActividadInformacionOrdenProd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.Produccion.ProductionDispActivity"
+            
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.PickingPenActivity"
+            
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.EnviosArticulo.PickingSendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.picking.PickingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.Expediciones.ExpedicionesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.Expediciones.CreateExpeditionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.Expediciones.AsignarAlbaranesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.Expediciones.InformacionExpedicionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.oscasistemas.appgestionlogistica.Recepciones.ReceivedMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+    </application>
+
+</manifest>

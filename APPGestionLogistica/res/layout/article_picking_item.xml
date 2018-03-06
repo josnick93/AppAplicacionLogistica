@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+            android:id="@+id/codigo_articulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/item_counter"
+            android:textColor="#F3F3F3"
+            android:textSize="22sp" />
+
+        <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+            android:id="@+id/referencia_cliente"
+            android:layout_width="190dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:gravity="left"
+            android:textColor="#F3F3F3"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- counter -->
+
+    <com.oscasistemas.appgestionlogistica.utils.AutoResizeTextView
+        android:id="@+id/articulo_cantidad"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#F3F3F3"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

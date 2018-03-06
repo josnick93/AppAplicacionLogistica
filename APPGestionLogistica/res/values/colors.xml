@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#324891</color>
+    <color name="textFieldBackground">#FFFFFF</color>
+    <color name="textFieldText">#000000</color>
+    <color name="textTitle">#FFFFFF</color>
+    <color name="subTitle">#D9DAD8</color>
+</resources>

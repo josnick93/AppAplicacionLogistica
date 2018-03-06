@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge"
+    android:background="@color/textFieldBackground" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/ProviderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proveedor: " />
+
+            <TextView
+                android:id="@+id/ProviderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextIniDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha Envio: " />
+
+            <TextView
+                android:id="@+id/dateIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad: " />
+
+            <TextView
+                android:id="@+id/Quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-----" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
